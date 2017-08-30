@@ -57,11 +57,6 @@ typings/
 # dotenv environment variables file
 .env
 
-# the site is built into here
+.cache/
 public
-
-# massive directory of all modules, don't commit this
-node_modules
-
-# temporary vim stuff
-*.swp
+yarn-error.log
