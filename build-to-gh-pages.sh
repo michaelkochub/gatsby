@@ -20,7 +20,7 @@ git checkout gh-pages
 find . -not 				\
 	\( 				\ 
 		-name 'CNAME' 		\  
-		-o -name 'README' 	\ 
+		-o -name 'README.md' 	\ 
 		-o -name '.gitignore' 	\ 
 		-o -name '.git' 	\ 
 	\) 				\ 
@@ -34,7 +34,7 @@ mv ~/$TEMP_DIR/* .
 git add .
 
 # commit to staging with UTC time-stamped message
-git commit -m "build commited at $(date -u +%Y-%m-%d\ \%H:%M:%S)"
+git commit -m "build committed at $(date -u +%Y-%m-%d\ \%H:%M:%S)"
 
 # push to trigger github pages remote build
 git push
