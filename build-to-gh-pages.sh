@@ -17,13 +17,13 @@ cd ..
 git checkout gh-pages
 
 # clear out files from old build, do not delete important files
-find . -not 							\
-	\( 											\ 
-		-name 'CNAME' 				\  
-		-o -name 'README' 		\ 
-		-o -name '.gitignore' \ 
-		-o -name '.git' 			\ 
-	\) 											\ 
+find . -not 				\
+	\( 				\ 
+		-name 'CNAME' 		\  
+		-o -name 'README' 	\ 
+		-o -name '.gitignore' 	\ 
+		-o -name '.git' 	\ 
+	\) 				\ 
 	-not -path '*.git/*' 		\ 
 	-delete
 
