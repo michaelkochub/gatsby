@@ -1,9 +1,10 @@
 # gatsby
-Starter with the bare essentials needed for a Gatsby site
+
+check inside `gatsby-proj`
 
 ## summary
 
-Keep track of progress doing [tutorial](https://www.gatsbyjs.org/tutorial/part-one/)
+keep track of progress doing [tutorial](https://www.gatsbyjs.org/tutorial/part-one/)
 
 ```bash
 $ git init
@@ -13,7 +14,7 @@ $ ...
 
 ## intention
 
-Playground for creating and demoing various React-based mini projects
+playground for creating and demoing various React-based mini projects
 
 ## other
 
