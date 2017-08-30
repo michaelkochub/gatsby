@@ -1,30 +1,43 @@
 #!/bin/zsh
 
+# rename this as you see fit, it goes in your home directory
+TEMP_DIR='temp-dir'
+
 # build the site to public/
 cd gatsby-proj
 npm run build
 
-# move build files to temp location
-mkdir ~/temp-dir
-mv public/* ~/temp-dir
+# move build files to temp location (make sure nothing valuable is there)
+rm -rf ~/$TEMP_DIR
+mkdir ~/$TEMP_DIR
+mv public/* ~/$TEMP_DIR
 
 # switch branches 
+cd ..
 git checkout gh-pages
 
-# clear out files from previous build, do not delete important files
-find . ! \( -name 'CNAME' -o -name '.*' -o -name 'README' \) -delete
+# clear out files from old build, do not delete important files
+find . -not 							\
+	\( 											\ 
+		-name 'CNAME' 				\  
+		-o -name 'README' 		\ 
+		-o -name '.gitignore' \ 
+		-o -name '.git' 			\ 
+	\) 											\ 
+	-not -path '*.git/*' 		\ 
+	-delete
 
 # move build files back into project 
-mv ~/temp-dir/* .
+mv ~/$TEMP_DIR/* .
 
 # add to staging area
 git add .
 
 # commit to staging with UTC time-stamped message
-git commit -m 'commit build at $(date -u +%Y-%m-%d\ \%H:%M:%S)'
+git commit -m "build commited at $(date -u +%Y-%m-%d\ \%H:%M:%S)"
 
 # push to trigger github pages remote build
 git push
 
-# back to normal 
+# back to master 
 git checkout master
