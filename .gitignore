@@ -57,3 +57,5 @@ typings/
 # dotenv environment variables file
 .env
 
+# the site is built into here
+public
