@@ -1,16 +1,16 @@
 {
   "assetsByChunkName": {
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-da5e5682236b8c944694.js",
-      "component---src-pages-index-js-da5e5682236b8c944694.js.map"
+      "component---src-pages-index-js-da5d8d57b89c542b0107.js",
+      "component---src-pages-index-js-da5d8d57b89c542b0107.js.map"
     ],
     "path---counter": [
       "path---counter-a0e39f21c11f6a62c5ab.js",
       "path---counter-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-counter-js": [
-      "component---src-pages-counter-js-7f5c38722780e4c42ff2.js",
-      "component---src-pages-counter-js-7f5c38722780e4c42ff2.js.map"
+      "component---src-pages-counter-js-e87c1dfa6a27894673d5.js",
+      "component---src-pages-counter-js-e87c1dfa6a27894673d5.js.map"
     ],
     "path---about-css-modules": [
       "path---about-css-modules-a0e39f21c11f6a62c5ab.js",
@@ -25,20 +25,24 @@
       "path---index-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-about-css-modules-js": [
-      "component---src-pages-about-css-modules-js-449ab50e7a84288a316e.js",
-      "component---src-pages-about-css-modules-js-449ab50e7a84288a316e.js.map"
+      "component---src-pages-about-css-modules-js-cd8c6d5e62766e0d80d8.js",
+      "component---src-pages-about-css-modules-js-cd8c6d5e62766e0d80d8.js.map"
     ],
     "commons": [
-      "commons-f1873a4f7ee992bae8f1.js",
-      "commons-f1873a4f7ee992bae8f1.js.map"
+      "commons-7e8b7c5ee880579c8bbb.js",
+      "build-js-styles.css",
+      "commons-7e8b7c5ee880579c8bbb.js.map",
+      "build-js-styles.css.map"
     ],
     "component---src-pages-page-2-js": [
-      "component---src-pages-page-2-js-3d370d75d3eb04fb65c5.js",
-      "component---src-pages-page-2-js-3d370d75d3eb04fb65c5.js.map"
+      "component---src-pages-page-2-js-cf67d065d5ecb5e1393f.js",
+      "component---src-pages-page-2-js-cf67d065d5ecb5e1393f.js.map"
     ],
     "app": [
-      "app-bac20f5c7c81b02e84d9.js",
-      "app-bac20f5c7c81b02e84d9.js.map"
+      "app-c4b05b36fcb2a7c4fa06.js",
+      "build-js-styles.css",
+      "app-c4b05b36fcb2a7c4fa06.js.map",
+      "build-js-styles.css.map"
     ]
   }
 }
