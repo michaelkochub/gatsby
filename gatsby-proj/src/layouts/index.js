@@ -23,8 +23,21 @@ export default ({ children, data }) =>
         {data.site.siteMetadata.title}
       </g.H3>
     </Link>
-    <Link className={linkStyle} to={`/about/`}>
-      About
+    <Link className={linkStyle} to={`/about/`} margin={`0 1rem 0 0`}>
+      <g.H5
+        margin={`0 1rem 0 0`}
+        display={`inline-block`}
+      >
+        About
+      </g.H5>
+    </Link>
+    <Link className={linkStyle} to={`/demos/`}>
+      <g.H5
+        margin={`0 1rem 0 0`}
+        display={`inline-block`}
+      >
+        Demos
+      </g.H5>
     </Link>
     {children()}
   </g.Div>

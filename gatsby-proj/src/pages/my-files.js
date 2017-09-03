@@ -1,4 +1,5 @@
 import React from "react"
+import Link from "gatsby-link"
 
 export default ({ data }) => {
 	console.log(data)
@@ -18,7 +19,12 @@ export default ({ data }) => {
           {data.allFile.edges.map(({ node }) =>
             <tr>
               <td>
-                {node.relativePath}
+		            <Link
+			            to={node.relativePath.slice(0,-3).split("/").slice(1).join("/")}
+			            css={{ textDecoration: `none`, color: `inherit` }}
+		          	>
+                	{node.relativePath}
+              	</Link>
               </td>
               <td>
                 {node.prettySize}
@@ -42,6 +48,7 @@ export const query = graphql`
 	  allFile {
 	    edges {
 	      node {
+	      	name
 	        relativePath
 	        prettySize
 	        extension
