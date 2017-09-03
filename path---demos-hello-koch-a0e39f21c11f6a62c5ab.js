@@ -1,0 +1,2 @@
+webpackJsonp([0xb473d0c68413a800],{"./node_modules/json-loader/index.js!./.cache/json/demos-hello-koch.json":function(o,e){o.exports={pathContext:{}}}});
+//# sourceMappingURL=path---demos-hello-koch-a0e39f21c11f6a62c5ab.js.map
