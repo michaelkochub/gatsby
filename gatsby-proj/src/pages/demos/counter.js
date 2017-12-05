@@ -3,7 +3,7 @@ import React from "react"
 class Counter extends React.Component {
 	constructor(props) {
 		super(props)
-		this.state = { count: this.props.initCount || 0 }
+		this.state = { count: this.props.initCount.value || 0 }
 	}
 
 	render() {
@@ -18,4 +18,4 @@ class Counter extends React.Component {
 	}
 }
 
-export default () => <Counter title="My Counter" initCount={3} />
+export default () => <Counter title="My Counter" initCount={{ value: 2 }} />
