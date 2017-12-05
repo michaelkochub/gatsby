@@ -1,4 +1,5 @@
 import React from "react"
+import ListNode from "./listNode"
 
 class BasicTodo extends React.Component {
 	constructor(props) {
@@ -27,9 +28,7 @@ class BasicTodo extends React.Component {
 				<ol>
 				{this.state.todos.map((todo, i) => 
 					// Usually this isn't recommended but items are only ever appended to the end of the array
-					<li key={i}>
-						{todo}
-					</li>
+					<ListNode key={i} todo={todo} />
 				)}
 				</ol>
 			</div>
